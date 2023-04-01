@@ -3,7 +3,7 @@ import { ControleRemotoDeVolume } from "./ControleRemoto/controleRemotoDeVolume"
 import { Radio } from "./Dispositivo/radio";
 import { Televisao } from "./Dispositivo/televisao";
 
-function handle(abstracao: ControleRemoto | ControleRemotoDeVolume): void {
+function Operacao(abstracao: ControleRemoto | ControleRemotoDeVolume): void {
   abstracao.toggleLigado();
   abstracao.toggleLigado();
 
@@ -17,4 +17,4 @@ function handle(abstracao: ControleRemoto | ControleRemotoDeVolume): void {
 const tv = new Televisao();
 const raido = new Radio();
 const controleRemotoRadio = new ControleRemotoDeVolume(raido);
-handle(controleRemotoRadio);
+Operacao(controleRemotoRadio);

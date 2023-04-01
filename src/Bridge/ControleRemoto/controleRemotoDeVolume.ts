@@ -1,5 +1,7 @@
 import { ControleRemoto } from "./controleRemoto";
 
+
+// Abstração
 export class ControleRemotoDeVolume extends ControleRemoto {
 
   aumentarVolume(): void {
@@ -10,7 +12,7 @@ export class ControleRemotoDeVolume extends ControleRemoto {
       `${this.dispositivo.getNome()} tinha o volume ${volumeAtual}, agora tem ${this.dispositivo.getVolume()}`
     );
   }
-  
+
   diminuirVolume(): void {
     const volumeAtual = this.dispositivo.getVolume();
     this.dispositivo.setVolume(this.dispositivo.getVolume() + 5);

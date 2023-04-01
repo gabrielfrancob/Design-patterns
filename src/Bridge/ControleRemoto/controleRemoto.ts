@@ -1,5 +1,7 @@
 import { IDispositivo } from "../Dispositivo/dispositivo";
 
+
+// Abstração
 export class ControleRemoto {
   constructor(protected dispositivo: IDispositivo) {}
 

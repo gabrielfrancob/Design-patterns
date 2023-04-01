@@ -1,5 +1,6 @@
 import { IDispositivo } from "./dispositivo";
 
+// Implementação concreta
 export class Radio implements IDispositivo {
   private volume: number = 0;
   private isLigado: boolean = false;

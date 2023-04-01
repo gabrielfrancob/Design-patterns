@@ -1,6 +1,5 @@
+// Implementação
 export interface IDispositivo {
-
-
   getNome(): string;
 
   setLigado(isLigado: boolean): void;
